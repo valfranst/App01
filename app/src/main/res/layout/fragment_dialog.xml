@@ -1,0 +1,60 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="teanlabsvalfran.app01.fragments.DialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/year">
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:layout_gravity="center"
+        android:background="@color/cardview_light_background"  >
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="DESCRIÇÃO"
+            android:textSize="@dimen/xxgrande"
+            android:textColor="@color/preta"
+            android:textStyle="bold"
+            android:background="#00ffff"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvServicoPrecos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitulo"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="05dp"
+            android:layout_marginRight="05dp"
+            tools:listitem="@layout/lst_servicopreco"/>
+
+        <Button
+            android:id="@+id/btCancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rvServicoPrecos"
+            android:text="CANCELAR"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

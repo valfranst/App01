@@ -1,0 +1,138 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="teanlabsvalfran.app01.fragments.OrcamentoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:layout_marginTop="10dp">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:scrollbars="horizontal">
+
+                <EditText
+                    android:id="@+id/idData"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:ems="11"
+                    android:maxLength="10"
+                    android:hint="Selecione a Data"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/xgrande"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/imgSelectData"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_toRightOf="@+id/idData"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_calendar" />
+
+                <ImageView
+                    android:id="@+id/imgData"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/imgSelectData"
+                    android:src="@drawable/cross_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:scrollbars="horizontal">
+
+                <EditText
+                    android:id="@+id/idPlaca"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:maxLength="8"
+                    android:hint="Informe a placa"
+                    android:inputType="textCapCharacters"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/xgrande"
+                    android:textStyle="bold|italic" />
+
+                <ImageView
+                    android:id="@+id/imgPlaca"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/idPlaca"
+                    android:src="@drawable/cross_icon" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btPesquisar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:text="PESQUISAR"
+                android:textSize="@dimen/xxgrande"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvOrcamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scrollbars="vertical"
+            android:visibility="visible"
+            tools:listitem="@layout/list_orcamento"
+            android:layout_marginBottom="45dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btVoltar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="end|bottom"
+        android:text="VOLTAR"
+        android:textSize="@dimen/xgrande"
+        style="@style/Widget.AppCompat.Button.Colored"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

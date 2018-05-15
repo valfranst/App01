@@ -1,0 +1,72 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="teanlabsvalfran.app01.fragments.Tela01Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <EditText
+                android:id="@+id/idPlacaT1"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/imgPlacaT1"
+                android:layout_marginRight="7dp"
+                android:ems="12"
+                android:maxLength="8"
+                android:hint="Informe a placa"
+                android:inputType="textCapCharacters"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/xgrande"
+                android:textStyle="bold|italic" />
+            <ImageView
+                android:id="@+id/imgPlacaT1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/btPesquisarT1"
+                android:src="@drawable/cross_icon" />
+            <Button
+                android:id="@+id/btPesquisarT1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="PESQUISAR"
+                android:textSize="@dimen/grande"
+                android:textStyle="bold|italic" />
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvVeiculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cabecalho"
+            android:scrollbars="vertical"
+            android:layout_marginTop="15dp"
+            tools:listitem="@layout/lst_veiculo"/>
+
+    </LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

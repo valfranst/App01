@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_row"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingBottom="7dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/nomeCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Nome: "
+            android:textSize="@dimen/xxgrande"
+            android:textColor="@color/preta"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtServico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/qtdServico"
+            android:layout_marginRight="10dp"
+            android:text="Serviços:"
+            android:textSize="@dimen/xxgrande"
+            android:textColor="@color/preta"
+            android:textStyle="italic"/>
+        <TextView
+            android:id="@+id/qtdServico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="0"
+            android:textSize="@dimen/xxgrande"
+            android:textColor="@color/preta"
+            android:textStyle="bold|italic"/>
+
+</RelativeLayout>

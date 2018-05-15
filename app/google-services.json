@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "16779173841",
+    "firebase_url": "https://app01-d2a9f.firebaseio.com",
+    "project_id": "app01-d2a9f",
+    "storage_bucket": "app01-d2a9f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16779173841:android:2e3fb837b4d0c49b",
+        "android_client_info": {
+          "package_name": "teanlabsvalfran.app01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16779173841-pirj3r6s6b3c9tkkeseeiqdkglsrt9fs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teanlabsvalfran.app01",
+            "certificate_hash": "9b9a6d8632f7da6fbd3246e0840c0cf2756a230e"
+          }
+        },
+        {
+          "client_id": "16779173841-kvdhfbumj26tbijt2e9o7oufkrim97rd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUjFJy4lfLT0XAzH4UIhJzHkSstNkWMCI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16779173841-kvdhfbumj26tbijt2e9o7oufkrim97rd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

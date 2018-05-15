@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="teanlabsvalfran.app01.TelasActivity">
+    <!--<item
+        androrcamentoIdd:idorcamentoId@+id/search"
+        android:icon="@drawable/ic_menu_manage"
+        android:title="Pesquisar"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always" />-->
+
+    <!--<item
+        android:id="@+id/upload"
+        android:icon="@drawable/ic_upload"
+        android:title="Pesquisar"
+        app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/atualizar"
+        android:icon="@drawable/ic_refresh"
+        android:title="Pesquisar"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/orcamentoE"
+        android:icon="@drawable/ic_orcamento"
+        android:title="Orcamento"
+        app:showAsAction="always" />
+
+</menu>
